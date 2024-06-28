@@ -11,7 +11,7 @@ const data = [
 
 const Dashboard = () => {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-8">
+    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-8 bg-gradient-to-r from-purple-200 via-pink-200 to-red-200">
       <Card className="w-full max-w-4xl">
         <CardHeader>
           <CardTitle className="text-2xl">Dashboard</CardTitle>

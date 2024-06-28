@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const CompanyDetail = () => {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-8">
+    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-8 bg-gradient-to-r from-green-200 via-blue-200 to-purple-200">
       <Card className="w-full max-w-4xl">
         <CardHeader>
           <CardTitle className="text-2xl">Company Detail</CardTitle>

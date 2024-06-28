@@ -33,7 +33,7 @@ const Invoices = () => {
   };
 
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-8">
+    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-8 bg-gradient-to-r from-yellow-200 via-red-200 to-pink-200">
       <Card className="w-full max-w-4xl">
         <CardHeader>
           <CardTitle className="text-2xl">Invoice Management</CardTitle>
@@ -50,7 +50,7 @@ const Invoices = () => {
                 <Input id="customer-name" placeholder="Enter Customer Name" />
               </div>
             </div>
-            <Button className="self-end" onClick={handleSearch}>Search</Button>
+            <Button className="self-end bg-blue-500 hover:bg-blue-700 text-white" onClick={handleSearch}>Search</Button>
           </div>
         </CardContent>
       </Card>
