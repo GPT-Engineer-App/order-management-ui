@@ -67,10 +67,41 @@
 }
  
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-background text-foreground;
+    @apply flex flex-col items-center justify-center;
+  }
+  .container {
+    @apply mx-auto px-4;
+  }
+  .card {
+    @apply w-full max-w-4xl;
+  }
+  .card-header {
+    @apply text-2xl;
+  }
+  .card-content {
+    @apply flex flex-col space-y-4;
+  }
+  .button {
+    @apply self-end bg-blue-500 hover:bg-blue-700 text-white;
+  }
+  .input {
+    @apply w-full;
+  }
+  .label {
+    @apply w-full;
+  }
+  .table {
+    @apply w-full;
+  }
+  .table-header {
+    @apply w-full;
+  }
+  .table-row {
+    @apply w-full;
+  }
+  .table-cell {
+    @apply w-full;
   }
 }
