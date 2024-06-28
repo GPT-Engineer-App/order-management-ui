@@ -12,7 +12,7 @@ const Navbar = () => {
           <img src={logo} alt="WAVE Logo" className="h-8 w-8" />
           <div className="text-white text-lg font-bold">WAVE</div>
         </div>
-        <div className="space-x-4">
+        <div className="space-x-4 flex flex-wrap">
           <Link to="/">
             <Button variant="outline" className="text-white bg-blue-500 hover:bg-blue-700">Home</Button>
           </Link>
