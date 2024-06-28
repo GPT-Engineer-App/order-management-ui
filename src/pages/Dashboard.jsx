@@ -1,5 +1,13 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
+const data = [
+  { name: 'Total Orders', value: 100 },
+  { name: 'Total Invoices', value: 50 },
+  { name: 'Pending Orders', value: 20 },
+  { name: 'Pending Invoices', value: 10 },
+];
 
 const Dashboard = () => {
   return (
@@ -10,42 +18,16 @@ const Dashboard = () => {
         </CardHeader>
         <CardContent>
           <div className="flex flex-col space-y-4">
-            <div className="flex space-x-4">
-              <Card className="w-full">
-                <CardHeader>
-                  <CardTitle>Total Orders</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>100</p>
-                </CardContent>
-              </Card>
-              <Card className="w-full">
-                <CardHeader>
-                  <CardTitle>Total Invoices</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>50</p>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="flex space-x-4">
-              <Card className="w-full">
-                <CardHeader>
-                  <CardTitle>Pending Orders</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>20</p>
-                </CardContent>
-              </Card>
-              <Card className="w-full">
-                <CardHeader>
-                  <CardTitle>Pending Invoices</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>10</p>
-                </CardContent>
-              </Card>
-            </div>
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart data={data}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="value" fill="#8884d8" />
+              </BarChart>
+            </ResponsiveContainer>
           </div>
         </CardContent>
       </Card>
