@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-8">
+    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-8 bg-gradient-to-r from-green-200 via-blue-200 to-purple-200">
       <Card className="w-full max-w-4xl">
         <CardHeader>
           <CardTitle className="text-2xl">Welcome to Order Management</CardTitle>
@@ -13,13 +13,13 @@ const Home = () => {
         <CardContent>
           <div className="flex flex-col space-y-4">
             <Link to="/orders">
-              <Button className="self-end">Go to Orders</Button>
+              <Button className="self-end bg-blue-500 hover:bg-blue-700 text-white">Go to Orders</Button>
             </Link>
             <Link to="/invoices">
-              <Button className="self-end">Go to Invoices</Button>
+              <Button className="self-end bg-green-500 hover:bg-green-700 text-white">Go to Invoices</Button>
             </Link>
             <Link to="/dashboard">
-              <Button className="self-end">Go to Dashboard</Button>
+              <Button className="self-end bg-purple-500 hover:bg-purple-700 text-white">Go to Dashboard</Button>
             </Link>
           </div>
         </CardContent>
