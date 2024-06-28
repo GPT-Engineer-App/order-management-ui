@@ -2,12 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import logo from '@/assets/logo.png';
 
 const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold">Order Management</div>
+        <div className="flex items-center space-x-2">
+          <img src={logo} alt="WAVE Logo" className="h-8 w-8" />
+          <div className="text-white text-lg font-bold">WAVE</div>
+        </div>
         <div className="space-x-4">
           <Link to="/">
             <Button variant="outline" className="text-white bg-blue-500 hover:bg-blue-700">Home</Button>
