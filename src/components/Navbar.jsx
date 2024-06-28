@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 const Navbar = () => {
   return (
@@ -26,6 +27,22 @@ const Navbar = () => {
           <Link to="/user-profile">
             <Button variant="outline" className="text-white bg-red-500 hover:bg-red-700">User Profile</Button>
           </Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+              <Button variant="outline" className="text-white bg-gray-500 hover:bg-gray-700">Options</Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>
+                <Link to="/settings">Settings</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link to="/help">Help</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link to="/logout">Logout</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </nav>
