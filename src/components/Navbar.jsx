@@ -14,6 +14,12 @@ const Navbar = () => {
           <Link to="/orders">
             <Button variant="outline" className="text-white">Orders</Button>
           </Link>
+          <Link to="/invoices">
+            <Button variant="outline" className="text-white">Invoices</Button>
+          </Link>
+          <Link to="/dashboard">
+            <Button variant="outline" className="text-white">Dashboard</Button>
+          </Link>
         </div>
       </div>
     </nav>
