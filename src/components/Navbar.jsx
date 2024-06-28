@@ -20,6 +20,12 @@ const Navbar = () => {
           <Link to="/dashboard">
             <Button variant="outline" className="text-white">Dashboard</Button>
           </Link>
+          <Link to="/company-detail">
+            <Button variant="outline" className="text-white">Company Detail</Button>
+          </Link>
+          <Link to="/user-profile">
+            <Button variant="outline" className="text-white">User Profile</Button>
+          </Link>
         </div>
       </div>
     </nav>
