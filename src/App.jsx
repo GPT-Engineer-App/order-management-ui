@@ -4,6 +4,8 @@ import Invoices from './pages/Invoices.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import Navbar from './components/Navbar';
 import Orders from './pages/Orders.jsx';
+import CompanyDetail from './pages/CompanyDetail.jsx';
+import UserProfile from './pages/UserProfile.jsx';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/invoices" element={<Invoices />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/orders" element={<Orders />} />
+        <Route path="/company-detail" element={<CompanyDetail />} />
+        <Route path="/user-profile" element={<UserProfile />} />
       </Routes>
     </Router>
   );
